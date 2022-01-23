@@ -37,10 +37,6 @@ $ python thetimemachine.py subdomain.domain.com
 AND SO ON 
 ```
 
-`$ cat urls.txt | python3 favfreak.py -o output`
-
-**Fetching /favicon.ico and generating hashes :**
-
 ![enter image description here](https://raw.githubusercontent.com/anmolksachan/TheTimeMachine/main/run.PNG)
 
 ### Add your own list of payloads
