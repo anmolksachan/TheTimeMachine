@@ -51,5 +51,8 @@ Add your own in the interested text file !
 
 Shoot my DM : [@FR13ND0x7F](https://twitter.com/fr13nd0x7f)
 
+### Special Thanks
+[@nihitjain11](https://github.com/nihitjain11)
+
 ## __Want to support my work?__
 Give me a Star in the repository, thats enough for me :P
