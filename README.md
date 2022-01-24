@@ -20,7 +20,7 @@ Note : Tested with python3 on Ubuntu/Kali
 ```
 $ git clone https://github.com/anmolksachan/TheTimeMachine
 $ cd TheTimeMachine
-$ pip3 install -m requirements.txt
+$ pip3 install -r requirements.txt
 $ python thetimemachine.py
 
 ```
@@ -52,7 +52,12 @@ Add your own in the interested text file !
 Shoot my DM : [@FR13ND0x7F](https://twitter.com/fr13nd0x7f)
 
 ### Special Thanks
+
 [@nihitjain11](https://github.com/nihitjain11)
+
+### Note
+
+This is not a stable version as few things are missing soon it will be updated with other functionality.
 
 ## __Want to support my work?__
 Give me a Star in the repository, thats enough for me :P
