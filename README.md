@@ -9,7 +9,7 @@ Read Blog here : Will write blog soon, if you wrote DM me with link :)
 
 I have created this tool for making my work easier when it comes to recon and fetching sensitive endpoints for sensitive data exposure and further exploitation using waybackurls and sorting for Sensitive endpoints, it has also option to look for sensitive endpoints for information disclosure, It has have more capabilities like looking for possible endpoints vulnerable to XSS, LFI, JIRA Based Vulnerability, Open Redirection.
 
-I'm not too much into bug bounty but recently found P1 with The Time Machine : https://bugcrowd.com/H4CK3R/crowdstream
+I'm not too much into bug bounty but recently Managed HOF in NOKIA (Soon will be updated in Website or is already there :P), and found P1 with The Time Machine : https://bugcrowd.com/H4CK3R/crowdstream
 
 It worked on multiple bug bounty program, reports are still under review :P
 
