@@ -26,9 +26,25 @@ if __name__ == "__main__":
     for i, arg in enumerate(sys.argv):
         i = (f"{arg}")
 
-url = f'https://web.archive.org/cdx/search/cdx?url=*.{i}/*&output=txt&fl=original&collapse=urlkey&page=/'
 print("Usage : thetimemachine.py target.com\n")
-print("Target:",(colored(i,'green')))
+
+print("Checking Your Internet Connection...")
+thetimemachine = 'https://web.archive.org/'
+try:
+    response = requests.get(thetimemachine)
+    res = requests.get(thetimemachine)
+    print("\nThe Time Machine got WayBackMachine's Status Code as: ",res.status_code)
+    print (colored('\nOK!, The Time Machine Will Work\nInternet Connection is Active.','green'))
+    response.close()
+except:
+    print (colored('Boo! The Time Machine got invalid status code tool might not work properly in offline mode, check your internet connection. ','red'))
+    print("\nUnable to load:",(colored(i,'red')))
+    print((colored('\nExiting!!!','red')))
+    exit()
+
+
+url = f'https://web.archive.org/cdx/search/cdx?url=*.{i}/*&output=txt&fl=original&collapse=urlkey&page=/'
+print("\nTarget Loaded:",(colored(i,'green')))
 
 print('\nFetching URLs from The Time Machine :P \nHave Patience this may take some time depending on the size of asset\n[Dont press Enter or anykey while TheTimeMachine is Fetching URLs]')
 response = requests.get(url)
@@ -120,7 +136,15 @@ def exit_or_explore():
  print("8:",colored("Attack Mode [Possible Vulnerable Endpoint : JIRA, XSS, Open Redirect, LFI, SQLi] ",'red'))
  print("9: Fetch Only Parameters From File")
  print("10: Exit")
- inp = int(input("\nEnter a number: "))
+ 
+ while True:
+    try:
+        inp = int(input("\nEnter a number: "))
+    except ValueError:
+        print(colored("Enter a valid option",'red'))
+    else:
+        break 
+ 
 
  if inp == 1:
     pattern = "/api/"
@@ -228,7 +252,14 @@ def exit_or_explore():
    print("4: Fetch Possible SQLi Vulnerable Endpoint")
    print("5: Fetch Possible JIRA Vulnerable Endpoint")
    print("6: Back")
-   option = int(input("\nEnter a number: "))
+   while True:
+    try:
+        option = int(input("\nEnter a number: "))
+    except ValueError:
+        print(colored("Enter a valid option",'red'))
+    else:
+        break
+
    if option == 1:
     patterns = "\nFinding Possible XSS Vulnerable links\n"
     print(patterns)
@@ -331,11 +362,10 @@ def exit_or_explore():
     exit_or_explore()
    
    else:
-    print("Switching to main Menu")
+    print(colored("Switching to main Menu",'red'))
     exit_or_explore()
 
  else:
     sys.exit("Quitting! Have a nice day ahead.")
-
 
 exit_or_explore()
