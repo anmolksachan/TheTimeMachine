@@ -25,6 +25,15 @@ $ python thetimemachine.py
 
 ```
 
+If you're not able to install requirements.txt, install manually, run below mentioned commands
+```
+$ pip install numpy
+$ pip install requests
+$ pip install coloroma
+$ pip install termcolor
+
+```
+
 Example Run : 
 
 Note : Entered URL must look like domain.com or subdomain.domain.com no http or https is required
