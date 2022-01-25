@@ -385,9 +385,8 @@ def exit_or_explore():
     print("Stored in",(colored(wp,'green')))
     exit_or_explore()
 
-    if option == 7:
-    patterns = "\nFinding Possible WordPress Vulnerable links\n"
-    print(patterns)
+   if option == 7:
+    print("Custom Fuzz xD")
     keyfile = (input("Enter location of file: "))
     testfile = targetFile
     k=open(keyfile,"r")
