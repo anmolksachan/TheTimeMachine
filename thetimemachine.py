@@ -59,6 +59,8 @@ lfi=i+"_lfi.txt"
 sqli=i+"_sqli.txt"
 jira=i+"_jira.txt"
 subdomainFile=i+"_subdomain.txt"
+wp=i+"_wp.txt"
+customFuzz=i+"_customFuzz.txt"
 
 file = open(targetFile, 'w')
 file.write(url_list)
@@ -251,7 +253,9 @@ def exit_or_explore():
    print("3: Fetch Possible LFI Vulnerable Endpoint")
    print("4: Fetch Possible SQLi Vulnerable Endpoint")
    print("5: Fetch Possible JIRA Vulnerable Endpoint")
-   print("6: Back")
+   print("6: Fetch Possible WordPress Vulnerable Endpoint")
+   print("7: Fetch Custom Vulnerable Endpoint Ref Files available here : https://github.com/danielmiessler/SecLists/tree/master/Discovery ")
+   print("8: Back")
    while True:
     try:
         option = int(input("\nEnter a number: "))
@@ -361,6 +365,46 @@ def exit_or_explore():
     print("Stored in",(colored(jira,'green')))
     exit_or_explore()
    
+   if option == 6:
+    patterns = "\nFinding Possible WordPress Vulnerable links\n"
+    print(patterns)
+    keyfile = "wp-fuzz.txt"
+    testfile = targetFile
+    k=open(keyfile,"r")
+    t=open(testfile,"r")
+    file = open(wp, 'w')
+    lines = t.readlines()
+    patterns = [i.strip() for i in k.readlines()]
+    for l in lines:
+       for p in patterns:
+          if p in l:
+            print(l)
+            file.write(str(l))
+    file.close()
+    print('Completed\n')
+    print("Stored in",(colored(wp,'green')))
+    exit_or_explore()
+
+    if option == 7:
+    patterns = "\nFinding Possible WordPress Vulnerable links\n"
+    print(patterns)
+    keyfile = (input("Enter location of file: "))
+    testfile = targetFile
+    k=open(keyfile,"r")
+    t=open(testfile,"r")
+    file = open(customFuzz, 'w')
+    lines = t.readlines()
+    patterns = [i.strip() for i in k.readlines()]
+    for l in lines:
+       for p in patterns:
+          if p in l:
+            print(l)
+            file.write(str(l))
+    file.close()
+    print('Completed\n')
+    print("Stored in",(colored(customFuzz,'green')))
+    exit_or_explore()
+
    else:
     print(colored("Switching to main Menu",'red'))
     exit_or_explore()
