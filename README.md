@@ -20,7 +20,7 @@ It worked on multiple bug bounty program, reports are still under review :P
 4. All Possible Sensitive instances in URL from TheTimeMachine (Searches from Fuzz List) or can also Add your own Custom List
 5. Fetches subdomains from waybackurl
 6. Search Custom keyword of your choice Eg. backup, .log etc.
-7. Attack Mode ( Searched for vulnerable possible endpoints for SQLi, LFI, XSS, Open Redirect & JIRA Based Vulnerability PS More to be added soon )
+7. Attack Mode ( Searched for vulnerable possible endpoints for SQLi, LFI, XSS, Open Redirect, Wordpress, JIRA Based Vulnerability or via Custom File, PS More to be added soon )
 8. Fetch only Parameters from any file (Eg. Fetched from way back urls, extracted file from Attack mode or any URLs file, also how creative you are can be used with burp spider file :P) 
 9. You can manually edit all the files that searched for XSS, LFI, Fuzz etc.
 
@@ -36,7 +36,7 @@ $ python thetimemachine.py
 
 ```
 
-If you're not able to install requirements.txt, install manually, run below mentioned commands
+If you're not able to install requirements.txt, run install.sh or install manually, run below mentioned commands
 ```
 $ pip install numpy
 $ pip install requests
