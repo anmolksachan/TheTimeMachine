@@ -94,6 +94,20 @@ for i in CoList:
 print("\nFound",(colored(sub,'green')),"subdomains instances in The Time Machine (all instances http and https are included)")
 print("Stored in",(colored(subdomainFile,'green')))
 
+def paramFinder():
+    print(colored("\n...Fetch All Parameters From Custom File...",'white','on_green'))
+    findme = (input("Enter location of file Eg. (target.com_URLs.txt) :"))
+    parameter=findme+"_param.txt"
+    pattern = re.compile("([\d\w]*?)=([\d\w+-_%()]*)")
+    file=open(parameter,"w")
+    for i, line in enumerate(open(findme)):
+        for match in re.finditer(pattern, line):
+            print(colored("URL : ",'red'),line,colored("\nFound on Line:",'red'),i+1,colored("\nParameter:",'red'),match.group())
+            file.write(match.group())
+            file.write('\n')
+    file.close()
+    print("\nAll Found parameters are Stored in",(colored(parameter,'green')))
+
 def exit_or_explore():
  print(colored("\n---- [Select from below options] ----",'white','on_green'))
  print("1: Fetch /api/ endpoint")
@@ -103,8 +117,9 @@ def exit_or_explore():
  print("5: Show Fetched Links from:",targetFile,"having",Counter,"instances")
  print("6: Show subdomains from TheTimeMachine, Found",sub,"instances")
  print("7: Enter Custom Keyword of your choice")
- print("8:",colored("Attack Mode [Possible Vulnerable Endpoint : JIRA, XSS, Open Redirect,  LFI, SQLi] ",'red'))
- print("9: Exit")
+ print("8:",colored("Attack Mode [Possible Vulnerable Endpoint : JIRA, XSS, Open Redirect, LFI, SQLi] ",'red'))
+ print("9: Fetch Only Parameters From File")
+ print("10: Exit")
  inp = int(input("\nEnter a number: "))
 
  if inp == 1:
@@ -199,6 +214,10 @@ def exit_or_explore():
     file = open(subdomainFile,"r")  
     Content = file.read()
     print(Content)
+    exit_or_explore()
+
+ elif inp == 9:
+    paramFinder()
     exit_or_explore()
 
  elif inp == 8:
@@ -310,7 +329,7 @@ def exit_or_explore():
     print('Completed\n')
     print("Stored in",(colored(jira,'green')))
     exit_or_explore()
-
+   
    else:
     print("Switching to main Menu")
     exit_or_explore()
