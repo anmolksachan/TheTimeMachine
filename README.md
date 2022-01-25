@@ -7,6 +7,8 @@ Read Blog here : Will write blog soon, if you wrote DM me with link :)
 
 ### Introduction 
 
+You must have heard about time travel in movies, series and comics. Well here we are Nah i'm not joking you can travel back in time and can fetch the endpoints from web applications to do further exploitation, don't believe me xD You will after Travelling from TheTimeMachine, PS Doesn't work offline you need internet to Travel In Time xD.
+
 I have created this tool for making my work easier when it comes to recon and fetching sensitive endpoints for sensitive data exposure and further exploitation using waybackurls and sorting for Sensitive endpoints, it has also option to look for sensitive endpoints for information disclosure, It has have more capabilities like looking for possible endpoints vulnerable to XSS, LFI, JIRA Based Vulnerability, Open Redirection.
 
 I'm not too much into bug bounty but recently Managed HOF in NOKIA (Soon will be updated in Website or is already there :P), and found P1 with The Time Machine : https://bugcrowd.com/H4CK3R/crowdstream
@@ -26,7 +28,7 @@ It worked on multiple bug bounty program, reports are still under review :P
 
 ### How to install and use 
 
-Note : Tested with python3 on Ubuntu/Kali
+Note : Tested with python3 on Ubuntu/Kali/Windows
 
 ```
 $ git clone https://github.com/anmolksachan/TheTimeMachine
