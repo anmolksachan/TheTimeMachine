@@ -58,7 +58,7 @@ $ python thetimemachine.py subdomain.domain.com
 .. .. .. .. 
 AND SO ON 
 ```
-
+![enter image description here](https://raw.githubusercontent.com/anmolksachan/anmolksachan.github.io/main/img/TTM.gif)
 ![enter image description here](https://raw.githubusercontent.com/anmolksachan/TheTimeMachine/main/run.PNG)
 
 ### Add your own list of payloads
