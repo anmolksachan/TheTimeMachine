@@ -3,7 +3,7 @@
 ![TheTimeMachine](https://raw.githubusercontent.com/anmolksachan/TheTimeMachine/main/logo.PNG)
 
 ### Detailed Description about this can be found here : 
-Read Blog here : ![Blog](https://anmolksachan.medium.com/the-time-machine-weaponizing-waybackurls-for-recon-bugbounties-osint-sensitive-endpoints-and-40889a03feeb)
+Read Blog here : https://anmolksachan.medium.com/the-time-machine-weaponizing-waybackurls-for-recon-bugbounties-osint-sensitive-endpoints-and-40889a03feeb
 
 ### Introduction 
 
