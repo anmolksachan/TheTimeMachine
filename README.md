@@ -78,8 +78,7 @@ Shoot my DM : [@FR13ND0x7F](https://twitter.com/fr13nd0x7f)
 [@nihitjain11](https://github.com/nihitjain11)
 
 ### Note
-
-This is not a stable version as few things are missing soon it will be updated with other functionality.
+There are none so far.
 
 ## __Want to support my work?__
-Give me a Star in the repository, thats enough for me :P
+Give me a Star in the repository or follow me [@FR13ND0x7F](https://twitter.com/fr13nd0x7f) , thats enough for me :P
