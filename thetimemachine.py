@@ -4,6 +4,8 @@ import re
 import numpy as np
 from colorama import init
 from termcolor import colored
+import os
+import datetime
 
 init()
 print("""
@@ -50,17 +52,27 @@ print('\nFetching URLs from The Time Machine :P \nHave Patience this may take so
 response = requests.get(url)
 url_list=response.text
 
-targetFile=i+"_URLs.txt"
+#"content/"+target+"_URLs.txt"
+
+ct = datetime.datetime.now()
+print("Current time :", ct)
+
+if not os.path.exists("content/"+i):
+    os.makedirs("content/"+i)
+
+print (colored("Data will be stored in content/"+i,'red'))
+
+targetFile="content/"+i+"/"+i+"_URLs.txt"
 print("Storing links in :",(colored(targetFile,'green')))
 
-xssFile=i+"_xss.txt"
-openRedirect=i+"_OpenRedirect.txt"
-lfi=i+"_lfi.txt"
-sqli=i+"_sqli.txt"
-jira=i+"_jira.txt"
-subdomainFile=i+"_subdomain.txt"
-wp=i+"_wp.txt"
-customFuzz=i+"_customFuzz.txt"
+xssFile="content/"+i+"/"+i+"_xss.txt"
+openRedirect="content/"+i+"/"+i+"_OpenRedirect.txt"
+lfi="content/"+i+"/"+i+"_lfi.txt"
+sqli="content/"+i+"/"+i+"_sqli.txt"
+jira="content/"+i+"/"+i+"_jira.txt"
+subdomainFile="content/"+i+"/"+i+"_subdomain.txt"
+wp="content/"+i+"/"+i+"_wp.txt"
+customFuzz="content/"+i+"/"+i+"_customFuzz.txt"
 
 file = open(targetFile, 'w')
 file.write(url_list)
@@ -200,7 +212,7 @@ def exit_or_explore():
    if option == 1:
     patterns = "\nFuzzing from default Fuzz.txt\n"
     print(patterns)
-    keyfile = "fuzz.txt"
+    keyfile = "db/fuzz.txt"
     testfile = targetFile
     keys = set(key.lower() for key in 
            re.findall(r'\w+', open(keyfile , "r").readline()))
@@ -268,7 +280,7 @@ def exit_or_explore():
     patterns = "\nFinding Possible XSS Vulnerable links\n"
     print(patterns)
     print("Storing links in :",(colored(xssFile,'green')))
-    keyfile = "xss.txt"
+    keyfile = "db/xss.txt"
     testfile = targetFile
     k=open(keyfile,"r")
     t=open(testfile,"r")
@@ -288,7 +300,7 @@ def exit_or_explore():
    elif option == 2:
     patterns = "\nFuzzing for Possible Open Redirect Vulnerable links\n"
     print(patterns)
-    keyfile = "openredirect.txt"
+    keyfile = "db/openredirect.txt"
     testfile = targetFile
     k=open(keyfile,"r")
     t=open(testfile,"r")
@@ -308,7 +320,7 @@ def exit_or_explore():
    if option == 3:
     patterns = "\nFinding Possible LFI Vulnerable links\n"
     print(patterns)
-    keyfile = "lfi.txt"
+    keyfile = "db/lfi.txt"
     testfile = targetFile
     k=open(keyfile,"r")
     t=open(testfile,"r")
@@ -328,7 +340,7 @@ def exit_or_explore():
    if option == 4:
     patterns = "\nFinding Possible SQLi Vulnerable links\n"
     print(patterns)
-    keyfile = "sqli.txt"
+    keyfile = "db/sqli.txt"
     testfile = targetFile
     k=open(keyfile,"r")
     t=open(testfile,"r")
@@ -348,7 +360,7 @@ def exit_or_explore():
    if option == 5:
     patterns = "\nFinding Possible JIRA Vulnerable links\nHow to Exploit: https://gist.github.com/0x240x23elu/891371d46a1e270c7bdded0469d8e09c\n"
     print(patterns)
-    keyfile = "jira.txt"
+    keyfile = "db/jira.txt"
     testfile = targetFile
     k=open(keyfile,"r")
     t=open(testfile,"r")
@@ -368,7 +380,7 @@ def exit_or_explore():
    if option == 6:
     patterns = "\nFinding Possible WordPress Vulnerable links\n"
     print(patterns)
-    keyfile = "wp-fuzz.txt"
+    keyfile = "db/wp-fuzz.txt"
     testfile = targetFile
     k=open(keyfile,"r")
     t=open(testfile,"r")
