@@ -42,7 +42,7 @@ If you're not able to install requirements.txt, run install.sh or install manual
 ```
 $ pip install numpy
 $ pip install requests
-$ pip install coloroma
+$ pip install colorama
 $ pip install termcolor
 
 ```
