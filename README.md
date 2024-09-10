@@ -81,5 +81,10 @@ Shoot my DM : [@FR13ND0x7F](https://twitter.com/fr13nd0x7f)
 ### Note
 There are none so far.
 
+## Community
+1. [Simple Recon on Android Using TheTimeMachine and Dirsearch Tools](https://alpinnnnnn13.medium.com/simple-recon-di-android-menggunakan-tools-thetimemachine-dan-dirsearch-3384aad17c15)
+
+
+
 ## __Want to support my work?__
 Give me a Star in the repository or follow me [@FR13ND0x7F](https://twitter.com/fr13nd0x7f) , thats enough for me :P
