@@ -83,7 +83,8 @@ There are none so far.
 
 ## Community
 1. [Simple Recon on Android Using TheTimeMachine and Dirsearch Tools](https://alpinnnnnn13.medium.com/simple-recon-di-android-menggunakan-tools-thetimemachine-dan-dirsearch-3384aad17c15)
-2. [cyb_detective](https://x.com/cyb_detective/status/1581324309108510721)
+2. [Michel Kartner](https://youtu.be/gh2DdRjK4BY?t=1888)
+3. [cyb_detective](https://x.com/cyb_detective/status/1581324309108510721)
 
 
 
