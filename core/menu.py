@@ -2,19 +2,19 @@ from termcolor import colored
 import re
 
 def launch_interactive_menu(urls, target):
-    print(colored("\n---- [Select from below options] ----", 'white', 'on_green'))
-    print("1: Find /api/ endpoints")
-    print("2: Find URLs containing JSON")
-    print("3: Find URLs with possible config references")
-    print("4: Attack Mode (XSS, LFI, SQLi...)")
-    print("5: Show all Wayback URLs")
-    print("6: Show subdomains")
-    print("7: Custom keyword search")
-    print("8: Extract Parameters")
-    print("9: Exit")
 
     while True:
         try:
+            print(colored("\n---- [Select from below options] ----", 'white', 'on_green'))
+            print("1: Find /api/ endpoints")
+            print("2: Find URLs containing JSON")
+            print("3: Find URLs with possible config references")
+            print("4: Attack Mode (XSS, LFI, SQLi...)")
+            print("5: Show all Wayback URLs")
+            print("6: Show subdomains")
+            print("7: Custom keyword search")
+            print("8: Extract Parameters")
+            print("9: Exit")
             choice = int(input("\nEnter a number: "))
         except ValueError:
             print(colored("Enter a valid number!", "red"))
