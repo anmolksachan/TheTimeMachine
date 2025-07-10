@@ -183,5 +183,6 @@ Author: **Anmol K. Sachan** | Twitter/ X: [@FR13ND0x7F](https://x.com/fr13nd0x7f
 Version 3.0 is under development. If you see any issues please open an issues and we are happy to take a look and fix that.
 - `--menu` work is under progress you can directly use `--attack` instead.
 - `--backup` needs to also output archieved URL simialr to [WayBackupFinder](https://github.com/anmolksachan/WayBackupFinder)
+- `--jwt` error in decoding JWT tokens and we are working to fix the issue.
 
 ---
