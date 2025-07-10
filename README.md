@@ -83,6 +83,10 @@ python3 thetimemachine.py example.com --fetch
 ```bash
 python3 thetimemachine.py example.com --backups
 ```
+#### Look for directory listing
+```bash
+python3 thetimemachine.py example.com --listings
+```
 #### Scan for possible XSS points
 ```bash
 python3 thetimemachine.py example.com --attack xss
@@ -171,5 +175,13 @@ If this tool helped you, drop a star on the repo or follow me on Twitter — tha
 
 Author: **Anmol K. Sachan** | Twitter/ X: [@FR13ND0x7F](https://x.com/fr13nd0x7f)
 <br>Co-author: **Chaudhary\_S4h4b** | Twitter/ X: [@Chaudhary\_S4h4b](https://x.com/)
+
+---
+
+## ⚒️ Issues
+
+Version 3.0 is under development. If you see any issues please open an issues and we are happy to take a look and fix that.
+- `--menu` work is under progress you can directly use `--attack` instead.
+- `--backup` needs to also output archieved URL simialr to [WayBackupFinder](https://github.com/anmolksachan/WayBackupFinder)
 
 ---
