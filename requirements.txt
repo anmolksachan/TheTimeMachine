@@ -3,3 +3,4 @@ numpy>=1.26.0
 requests>=2.31.0
 rich>=13.6.0
 termcolor>=2.4.0
+PyJwt
