@@ -1,4 +1,3 @@
-
 /?s=
 /search?q=
 /index.php?lang=
