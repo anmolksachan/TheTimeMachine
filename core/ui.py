@@ -39,5 +39,6 @@ def print_banner():
 ██╔████╔██║███████║██║░░╚═╝███████║██║██╔██╗██║█████╗░░
 ██║╚██╔╝██║██╔══██║██║░░██╗██╔══██║██║██║╚████║██╔══╝░░
 ██║░╚═╝░██║██║░░██║╚█████╔╝██║░░██║██║██║░╚███║███████╗
-╚═╝░░░░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚══════╝""")
-    print(colored('  Coded with Love by Anmol K Sachan (@Fr13ND0x7f) & Arjun Chaudhary (Chaudhary_S4h4b)\n','green')) 
+╚═╝░░░░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚══════╝ v3.0""")
+    print(colored('         An OSINT Framework for Way Back Machine\n', 'green'))
+    print(colored('Coded with Love by Anmol K Sachan (@Fr13ND0x7f) & Arjun Chaudhary (Chaudhary_S4h4b)\n','green')) 
