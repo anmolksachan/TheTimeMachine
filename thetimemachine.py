@@ -16,6 +16,7 @@ from core.menu import launch_interactive_menu
 from core.parameters import extract_parameters
 from core.subdomains import extract_subdomains_from_urls
 from core.lister import scan_for_listings
+from core.fetcher import console 
 def main():
     parser = argparse.ArgumentParser(description='⏳ TheTimeMachine - Wayback Recon Suite')
     parser.add_argument("target", help="Target domain")
@@ -38,9 +39,14 @@ def main():
     urls = []
 
     if args.fetch:
-        urls = fetcher.fetch_wayback_urls(target)
-        fetcher.save_to_file(urls_file, urls)
+        # Use a spinner for animation
+        with console.status("[bold cyan]Contacting archive dimension...[/bold cyan]", spinner="dots"):
+            urls, output_path = fetcher.fetch_wayback_urls(target)
+        
+        if urls:
+            console.print(f"[bold green]URLs successfully written to {output_path}[/bold green]")
     else:
+        # Load existing URLs from file
         with open(urls_file) as f:
             urls = [line.strip() for line in f]
 
