@@ -1,93 +1,175 @@
-## The Time Machine - Weaponizing WaybackUrls for Recon, BugBounties , OSINT, Sensitive Endpoints and what not
+---
 
-<img width="495" alt="Screenshot 2025-06-27 at 7 31 07 AM" src="https://github.com/user-attachments/assets/e15d5674-4af8-44be-8e70-7790b1d151be" />
-<!--![TheTimeMachine](https://raw.githubusercontent.com/anmolksachan/TheTimeMachine/main/logo.PNG)-->
+# 🚀 TheTimeMachine v3.0 - Weaponizing Wayback for Recon, BugBounties, OSINT & More!
 
-### Detailed Description about this can be found here : 
-Read Blog here : https://anmolksachan.medium.com/the-time-machine-weaponizing-waybackurls-for-recon-bugbounties-osint-sensitive-endpoints-and-40889a03feeb
+![image](https://github.com/user-attachments/assets/e99eb95e-f46e-4b97-8d2a-83bac89d0447)
 
-### Introduction 
+You’ve heard of time travel in movies and comics, right? Well, this isn’t fiction anymore 😎. *TheTimeMachine* lets you dig through the past of any web app by scraping archived URLs from the Wayback Machine — and helps you find sensitive, forgotten, or deprecated endpoints for further exploitation.
 
-You must have heard about time travel in movies, series and comics. Well here we are Nah i'm not joking you can travel back in time and can fetch the endpoints from web applications to do further exploitation, don't believe me xD You will after Travelling from TheTimeMachine, PS Doesn't work offline you need internet to Travel In Time xD.
+Whether you’re into bug bounty, red teaming, or just love good ol’ recon, this tool was built to make my recon workflow faster, cleaner, and more effective. No more juggling multiple scripts — TheTimeMachine does it all in one shot.
 
-I have created this tool for making my work easier when it comes to recon and fetching sensitive endpoints for sensitive data exposure and further exploitation using waybackurls and sorting for Sensitive endpoints, it has also option to look for sensitive endpoints for information disclosure, It has have more capabilities like looking for possible endpoints vulnerable to XSS, LFI, JIRA Based Vulnerability, Open Redirection.
+---
 
-I'm not too much into bug bounty but recently Managed HOF in NOKIA (Soon will be updated in Website or is already there :P), and found P1 with The Time Machine : https://bugcrowd.com/H4CK3R/crowdstream
+## 💡 What It Does
 
-It worked on multiple bug bounty program, reports are still under review :P
+This isn't just another Wayback scraper. Here's what TheTimeMachine brings to the table:
 
-### Features
-1. Search for /api/ endpoint
-2. Search for JSON endpoint
-3. Fetch possible Conf(configuration) endpoint
-4. All Possible Sensitive instances in URL from TheTimeMachine (Searches from Fuzz List) or can also Add your own Custom List
-5. Fetches subdomains from waybackurl
-6. Search Custom keyword of your choice Eg. backup, .log etc.
-7. Attack Mode ( Searched for vulnerable possible endpoints for SQLi, LFI, XSS, Open Redirect, Wordpress, JIRA Based Vulnerability or via Custom File, PS More to be added soon )
-8. Fetch only Parameters from any file (Eg. Fetched from way back urls, extracted file from Attack mode or any URLs file, also how creative you are can be used with burp spider file :P) 
-9. You can manually edit all the files that searched for XSS, LFI, Fuzz etc.
+- 🔎 **Archived URL Fetching** – Pull historical URLs from Wayback Machine.
+- 💾 **Backup File Detection** – Find `.zip`, `.bak`, `.sql`, `.tar.gz`, `.old`, and other juicy files.
+- ⚔️ **Attack Mode** – Scan for vulnerable endpoints using patterns/signatures:
+  - XSS
+  - SQLi
+  - LFI
+  - Open Redirects
+  - WordPress Vulns
+  - JIRA-based misconfig
+- 🧠 **GET Parameter Mapping** – Map every GET parameter to where it appears. (Great for fuzzing automation.)
+- 🧪 **JWT Detection** – Detect and decode JWTs embedded in archived URLs.
+- 📁 **Directory Listing Detection** – Find open indexed directories.
+- 🕵️ **Subdomain Enumeration** – Pull subdomains seen in archived data.
+- 🔍 **Keyword Search** – Search custom keywords like `config`, `backup`, `.log`, etc.
+- 🧩 **Custom Payload Lists** – Use your own fuzz list or signatures for custom scans.
 
-### How to install and use 
+---
 
-Note : Tested with python3 on Ubuntu/Kali/Windows
+## ⚙️ Installation
 
-```
-$ git clone https://github.com/anmolksachan/TheTimeMachine
-$ cd TheTimeMachine
-$ pip3 install -r requirements.txt
-$ python thetimemachine.py
+Tested on **Python 3** across Ubuntu/Kali/Windows.
 
-```
+```bash
+git clone https://github.com/anmolksachan/TheTimeMachine
+````
+```bash
+cd TheTimeMachine
+````
+```bash
+pip3 install -r requirements.txt
+````
 
-If you're not able to install requirements.txt, run install.sh or install manually, run below mentioned commands
-```
-$ pip install numpy
-$ pip install requests
-$ pip install colorama
-$ pip install termcolor
+---
 
-```
+## 🚀 Usage
 
-Example Run : 
-
-Note : Entered URL must look like domain.com or subdomain.domain.com no http or https is required
-
-```
-$ python thetimemachine.py domain.com
-$ python thetimemachine.py subdomain.domain.com
-.. .. .. .. 
-.. .. .. .. 
-AND SO ON 
-```
-![enter image description here](https://raw.githubusercontent.com/anmolksachan/anmolksachan.github.io/main/img/TTM.gif)
-![enter image description here](https://raw.githubusercontent.com/anmolksachan/TheTimeMachine/main/run.PNG)
-
-### Add your own list of payloads
-
-```
-you can edit multiple available payloads and Fuzz , 
-Add your own in the interested text file !
-
+```bash
+python3 thetimemachine.py <target.com> [OPTIONS]
 ```
 
-### Contact
+**Note:** Don't use `http://` or `https://` in the domain — just pass `domain.com` or `sub.domain.com`.
 
-Shoot my DM : [@FR13ND0x7F](https://twitter.com/fr13nd0x7f)
+---
 
-### Special Thanks
+## 📋 Options
 
-[@nihitjain11](https://github.com/nihitjain11) <br />
-[@Shivam Saraswat](https://github.com/shivamsaraswat)
+| Option            | Description                                                  |
+| ----------------- | ------------------------------------------------------------ |
+| `--fetch`         | Fetch archived URLs from Wayback                             |
+| `--backups`       | Scan for exposed backup/config files                         |
+| `--attack [type]` | Run attack mode (xss, sqli, lfi, redirect, jira, wp, custom) |
+| `--jwt`           | Detect & decode JWT tokens                                   |
+| `--subdomains`    | Extract subdomains from historical URLs                      |
+| `--parameters`    | Extract GET parameters & map them to URLs                    |
+| `--listings`      | Detect open directory listings                               |
 
-### Note
-There are none so far.
+---
 
-## Community
-1. [Simple Recon on Android Using TheTimeMachine and Dirsearch Tools](https://alpinnnnnn13.medium.com/simple-recon-di-android-menggunakan-tools-thetimemachine-dan-dirsearch-3384aad17c15)
-2. [Michel Kartner](https://youtu.be/gh2DdRjK4BY?t=1888)
-3. [cyb_detective](https://x.com/cyb_detective/status/1581324309108510721)
+## 🔁 Example Workflows
 
 
+#### Fetch all Wayback URLs
+```bash
+python3 thetimemachine.py example.com --fetch
+```
+#### Look for exposed backup files
+```bash
+python3 thetimemachine.py example.com --backups
+```
+#### Scan for possible XSS points
+```bash
+python3 thetimemachine.py example.com --attack xss
+```
+#### Map parameters from archived data
+```bash
+python3 thetimemachine.py example.com --parameters
+```
+### Extract JWTs
+```bash
+python3 thetimemachine.py example.com --jwt
+```
+### And much more
+```bash
+usage: thetimemachine.py [-h] [--fetch] [--jwt] [--backups] [--subdomains] [--listings] [--attack {xss,sqli,lfi,redirect,jira,wp,fuzz}] [--menu]
+                         [--parameters]
+                         target
+```
+---
 
-## __Want to support my work?__
-Give me a Star in the repository or follow me [@FR13ND0x7F](https://twitter.com/fr13nd0x7f) , thats enough for me :P
+## 📁 Output Structure
+
+All results are neatly saved under the `content/` directory:
+
+```
+content/
+└── example.com/
+    ├── example.com_URLs.txt
+    ├── example.com_xss.txt
+    ├── example.com_sqli.txt
+    ├── example.com_parameters.txt
+    ├── example.com_subdomain.txt
+    └── ...
+```
+
+---
+
+## ✍️ Add Your Own Payloads
+
+You can fully customize the payloads for XSS, SQLi, fuzzing, etc. Just edit the respective `.txt` files inside the repo and fire away!
+
+---
+
+## 🧠 Why I Built This
+
+I'm not a full-time bug bounty hunter, but I needed a tool that’d do fast recon, find juicy endpoints, and give me enough leads to manually dig deeper. Got my HOF on multiple VDPs and bugbounty, including **NOKIA**, **Mediatek**, and more. 
+
+---
+
+## 📸 Demo
+
+![GIF Demo](https://raw.githubusercontent.com/anmolksachan/anmolksachan.github.io/main/img/TTM.gif)
+
+---
+
+## 🙌 Shoutouts
+
+* [@nihitjain11](https://github.com/nihitjain11)
+* [@Shivam Saraswat](https://github.com/shivamsaraswat)
+* [@thecyberneh](https://github.com/thecyberneh$0)
+* [PushkraJ99](https://github.com/PushkraJ99$0)
+
+---
+
+## 🌎 Community
+
+1. [Simple Recon on Android using TheTimeMachine + Dirsearch (Medium)](https://alpinnnnnn13.medium.com/simple-recon-di-android-menggunakan-tools-thetimemachine-dan-dirsearch-3384aad17c15)
+2. [Michel Kartner – YouTube](https://youtu.be/gh2DdRjK4BY?t=1888)
+3. [@cyb\_detective’s Tweet](https://x.com/cyb_detective/status/1581324309108510721)
+
+---
+
+## 📬 Contact
+
+DMs are open – reach out to me on [@FR13ND0x7F](https://twitter.com/fr13nd0x7f)
+
+---
+
+## ⭐️ Support
+
+If this tool helped you, drop a star on the repo or follow me on Twitter — that’s all I ask 😄
+
+---
+
+## 👨‍💻 Author
+
+Author: **Anmol K. Sachan** | Twitter/ X: [@FR13ND0x7F](https://x.com/fr13nd0x7f)
+<br>Co-author: **Chaudhary\_S4h4b** | Twitter/ X: [@Chaudhary\_S4h4b](https://x.com/)
+
+---
