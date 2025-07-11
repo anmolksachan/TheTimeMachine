@@ -137,9 +137,10 @@ I'm not a full-time bug bounty hunter, but I needed a tool that’d do fast reco
 ---
 
 ## 📸 Demo
+<!--![GIF Demo](https://raw.githubusercontent.com/anmolksachan/anmolksachan.github.io/main/img/TTM.gif)-->
+https://github.com/user-attachments/assets/e07155ed-52b5-45e4-91aa-297a5caeac3a
 
-![GIF Demo](https://raw.githubusercontent.com/anmolksachan/anmolksachan.github.io/main/img/TTM.gif)
-
+#### Note: This is just a demo and doesn't cover full potential of the tool.
 ---
 
 ## 🙌 Shoutouts
