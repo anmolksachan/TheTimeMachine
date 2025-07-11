@@ -16,6 +16,7 @@ This isn't just another Wayback scraper. Here's what TheTimeMachine brings to th
 
 - 🔎 **Archived URL Fetching** – Pull historical URLs from Wayback Machine.
 - 💾 **Backup File Detection** – Find `.zip`, `.bak`, `.sql`, `.tar.gz`, `.old`, and other juicy files.
+- ⚙️ **Historical Backups** - Looks for historical backups for the identified backup files.
 - ⚔️ **Attack Mode** – Scan for vulnerable endpoints using patterns/signatures:
   - XSS
   - SQLi
