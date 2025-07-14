@@ -10,6 +10,15 @@ Whether you’re into bug bounty, red teaming, or just love good ol’ recon, th
 
 ---
 
+## 🧩 Featured At
+
+| Conference        | Year | Track / Showcase         |    |
+|-------------------|------|---------------------------|---|
+| [BSides Mumbai](https://www.linkedin.com/feed/update/urn:li:activity:7339908506176618497/) | 2025 | Tools Arsenal Showcase |<img width="225" height="224" alt="image" src="https://github.com/user-attachments/assets/b5c1937d-d7bb-49e1-9bc3-6166102a2781" />|
+| Scheduled and will be revealed soon | 2025 | Tools Arsenal Showcase |Selected and TBD|
+
+---
+
 ## 💡 What It Does
 
 This isn't just another Wayback scraper. Here's what TheTimeMachine brings to the table:
@@ -158,6 +167,10 @@ https://github.com/user-attachments/assets/e07155ed-52b5-45e4-91aa-297a5caeac3a
 1. [Simple Recon on Android using TheTimeMachine + Dirsearch (Medium)](https://alpinnnnnn13.medium.com/simple-recon-di-android-menggunakan-tools-thetimemachine-dan-dirsearch-3384aad17c15)
 2. [Michel Kartner – YouTube](https://youtu.be/gh2DdRjK4BY?t=1888)
 3. [@cyb\_detective’s Tweet](https://x.com/cyb_detective/status/1581324309108510721)
+4. [@cyb\_detective’s Tweet v3.0](https://x.com/cyb_detective/status/1943789270726324606)
+5. [The Ultimate Guide to the Time Machine Way Back URL Crawler for OSINT](https://www.youtube.com/watch?v=eguWHDfV-W0)
+6. [OSINT resources](https://sizeof.cat/post/osint-resources/)
+7. [Cyber Detective's OSINT tools collection](https://github.com/cipher387/osint_stuff_tool_collection)
 
 ---
 
