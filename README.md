@@ -14,8 +14,9 @@ Whether you’re into bug bounty, red teaming, or just love good ol’ recon, th
 
 | Conference        | Year | Track / Showcase         |    |
 |-------------------|------|---------------------------|---|
+| [Defcon33- Las Vegas, NV](https://defcon.org/html/defcon-33/dc-33-demolabs.html#content_60874) | 2025 | Demo Labs | <img width="225" height="224" alt="image" src="https://github.com/user-attachments/assets/74fc8406-70eb-4b50-a42b-60af6a62cd34" /> |
 | [BSides Mumbai](https://www.linkedin.com/feed/update/urn:li:activity:7339908506176618497/) | 2025 | Tools Arsenal Showcase |<img width="225" height="224" alt="image" src="https://github.com/user-attachments/assets/b5c1937d-d7bb-49e1-9bc3-6166102a2781" />|
-| Scheduled and will be revealed soon | 2025 | Tools Arsenal Showcase |Selected and TBD|
+
 
 ---
 
