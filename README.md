@@ -172,6 +172,7 @@ https://github.com/user-attachments/assets/e07155ed-52b5-45e4-91aa-297a5caeac3a
 5. [The Ultimate Guide to the Time Machine Way Back URL Crawler for OSINT](https://www.youtube.com/watch?v=eguWHDfV-W0)
 6. [OSINT resources](https://sizeof.cat/post/osint-resources/)
 7. [Cyber Detective's OSINT tools collection](https://github.com/cipher387/osint_stuff_tool_collection)
+8. [Unlock the Full Potential of the Wayback Machine for Bug Bounty](https://infosecwriteups.com/unlock-the-full-potential-of-the-wayback-machine-for-bug-bounty-8b6f57e2637d)
 
 ---
 
@@ -198,6 +199,6 @@ Author: **Anmol K. Sachan** | Twitter/ X: [@FR13ND0x7F](https://x.com/fr13nd0x7f
 
 Version 3.0 is under development. If you see any issues please open an issues and we are happy to take a look and fix that.
 - `--menu` work is under progress you can directly use `--attack` instead.
-- `listings` enhanced detection capability.
+- `listings` enhanced detection capability with aggresive mode.
 
 ---
