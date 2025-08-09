@@ -164,6 +164,14 @@ https://github.com/user-attachments/assets/e07155ed-52b5-45e4-91aa-297a5caeac3a
 
 ---
 
+## 📝 Blogs
+
+1. [The Time Machine — Weaponizing WaybackUrls for Recon, BugBounties , OSINT, Sensitive Endpoints and what not v1.0](https://medium.com/@anmolksachan/the-time-machine-weaponizing-waybackurls-for-recon-bugbounties-osint-sensitive-endpoints-and-40889a03feeb)
+2. [Time Traveling for Bugs: How The Time Machine v3.0 Uncovered an XSS on REDACTED.com](https://medium.com/@anmolksachan/time-traveling-for-bugs-how-the-time-machine-uncovered-an-xss-on-redacted-com-92e3662a50e4)
+
+---
+
+
 ## 🌎 Community
 
 1. [Simple Recon on Android using TheTimeMachine + Dirsearch (Medium)](https://alpinnnnnn13.medium.com/simple-recon-di-android-menggunakan-tools-thetimemachine-dan-dirsearch-3384aad17c15)
