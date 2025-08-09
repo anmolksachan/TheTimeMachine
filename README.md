@@ -182,6 +182,7 @@ https://github.com/user-attachments/assets/e07155ed-52b5-45e4-91aa-297a5caeac3a
 6. [OSINT resources](https://sizeof.cat/post/osint-resources/)
 7. [Cyber Detective's OSINT tools collection](https://github.com/cipher387/osint_stuff_tool_collection)
 8. [Unlock the Full Potential of the Wayback Machine for Bug Bounty](https://infosecwriteups.com/unlock-the-full-potential-of-the-wayback-machine-for-bug-bounty-8b6f57e2637d)
+9. [TheTimeMachine for Bug Bounties & OSINT](https://medium.com/@XEyeSecurity/thetimemachine-for-bug-bounties-osint-39bded4bc78f)
 
 ---
 
