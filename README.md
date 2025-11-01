@@ -17,6 +17,7 @@ Whether you’re into bug bounty, red teaming, or just love good ol’ recon, th
 | [Defcon33- Las Vegas, NV](https://defcon.org/html/defcon-33/dc-33-demolabs.html#content_60874) | 2025 | Demo Labs | <img width="225" height="224" alt="image" src="https://github.com/user-attachments/assets/74fc8406-70eb-4b50-a42b-60af6a62cd34" /> |
 | [BSides Mumbai](https://www.linkedin.com/feed/update/urn:li:activity:7339908506176618497/) | 2025 | Tools Arsenal Showcase |<img width="225" height="224" alt="image" src="https://github.com/user-attachments/assets/b5c1937d-d7bb-49e1-9bc3-6166102a2781" />|
 | [OSINT Conference](https://osintconference.com/speakers) | 2025 | OSINT Conference | <img width="225" height="224" alt="image" src="https://github.com/user-attachments/assets/eba9502f-047e-42b7-ab7d-c3154a4acc11" /> |
+| [Null Bangalore × OWASP Bangalore](https://www.linkedin.com/feed/update/urn:li:activity:7389327666564263936/) | 2025 |  Monthly Meetup | <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/28ed864b-eb4d-48fe-8412-7da576e0e899" />|
 | [Announcing Soon!](#) | 20XX | Announcing Soon! | <img width="225" height="224" alt="image" src="https://comb.io/p4hBRB.gif" />|
 
 
@@ -169,6 +170,7 @@ https://github.com/user-attachments/assets/e07155ed-52b5-45e4-91aa-297a5caeac3a
 
 1. [The Time Machine — Weaponizing WaybackUrls for Recon, BugBounties , OSINT, Sensitive Endpoints and what not v1.0](https://medium.com/@anmolksachan/the-time-machine-weaponizing-waybackurls-for-recon-bugbounties-osint-sensitive-endpoints-and-40889a03feeb)
 2. [Time Traveling for Bugs: How The Time Machine v3.0 Uncovered an XSS on REDACTED.com](https://medium.com/@anmolksachan/time-traveling-for-bugs-how-the-time-machine-uncovered-an-xss-on-redacted-com-92e3662a50e4)
+3. [How “The Time Machine v3.0” Landed Me in the CERT-In Hall of Fame](https://anmolksachan.medium.com/how-the-time-machine-v3-0-landed-me-in-the-cert-in-hall-of-fame-5d356ad34911)
 
 ---
 
