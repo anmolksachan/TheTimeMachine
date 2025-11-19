@@ -1,5 +1,6 @@
 # thetimemachine.py
 import os
+import sys
 import argparse
 from core import (
     fetcher,
@@ -29,6 +30,11 @@ def main():
     parser.add_argument("--menu", action="store_true", help="Launch interactive menu")
     parser.add_argument("--parameters", action="store_true", help="Extract GET parameters from URLs")
 
+
+    # Show help if no `--` options are provided
+    if not any(arg.startswith('--') for arg in sys.argv[1:]):
+        parser.print_help()
+        return
 
     args = parser.parse_args()
     target = args.target
