@@ -30,7 +30,6 @@ def main():
     parser.add_argument("--menu", action="store_true", help="Launch interactive menu")
     parser.add_argument("--parameters", action="store_true", help="Extract GET parameters from URLs")
 
-
     # Show usage if no `--` options are provided
     if not any(arg.startswith('--') for arg in sys.argv[1:]):
         parser.print_usage()
@@ -79,7 +78,6 @@ def main():
     if args.listings:
         scan_for_listings(target, threads=10) # You can customize the thread count
 
-
     if args.attack:
         result = attackmode.pattern_match_mode(urls_file, args.attack, db_folder="db")
         if result:
@@ -91,6 +89,7 @@ def main():
 
     if args.menu:
         menu.launch_interactive_menu(urls, target)
+
 
 if __name__ == "__main__":
     print_banner()
