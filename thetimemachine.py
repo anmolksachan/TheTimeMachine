@@ -31,9 +31,9 @@ def main():
     parser.add_argument("--parameters", action="store_true", help="Extract GET parameters from URLs")
 
 
-    # Show help if no `--` options are provided
+    # Show usage if no `--` options are provided
     if not any(arg.startswith('--') for arg in sys.argv[1:]):
-        parser.print_help()
+        parser.print_usage()
         return
 
     args = parser.parse_args()
