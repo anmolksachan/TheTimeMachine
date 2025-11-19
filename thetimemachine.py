@@ -2,6 +2,7 @@
 import os
 import sys
 import argparse
+from urllib.parse import urlparse
 from core import (
     fetcher,
     jwtxposer,
@@ -36,7 +37,11 @@ def main():
         return
 
     args = parser.parse_args()
-    target = args.target
+
+    # Extract target using urlparse
+    if "://" not in args.target:
+        args.target = "//" + args.target
+    target = urlparse(args.target).hostname.lower()
     content_dir = f"content/{target}"
     os.makedirs(content_dir, exist_ok=True)
 
