@@ -12,11 +12,11 @@ from core import (
 )
 from core.ui import show_loader, print_banner
 from core.utils import load_extensions_from_file
-from core.menu import launch_interactive_menu
 from core.parameters import extract_parameters
-from core.subdomains import extract_subdomains_from_urls
 from core.lister import scan_for_listings
 from core.fetcher import console
+
+
 def main():
     parser = argparse.ArgumentParser(description='⏳ TheTimeMachine - Wayback Recon Suite')
     parser.add_argument("target", help="Target domain")
