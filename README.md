@@ -18,7 +18,7 @@ Whether you’re into bug bounty, red teaming, or just love good ol’ recon, th
 | [BSides Mumbai](https://www.linkedin.com/feed/update/urn:li:activity:7339908506176618497/) | 2025 | Tools Arsenal Showcase |<img width="225" height="224" alt="image" src="https://github.com/user-attachments/assets/b5c1937d-d7bb-49e1-9bc3-6166102a2781" />|
 | [OSINT Conference](https://osintconference.com/speakers) | 2025 | OSINT Conference | <img width="225" height="224" alt="image" src="https://github.com/user-attachments/assets/eba9502f-047e-42b7-ab7d-c3154a4acc11" /> |
 | [Null Bangalore × OWASP Bangalore](https://www.linkedin.com/feed/update/urn:li:activity:7389327666564263936/) | 2025 |  [Monthly Meetup](https://www.meetup.com/owasp-bangalore-chapter/events/311891197/?eventOrigin=group_past_events) | <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/28ed864b-eb4d-48fe-8412-7da576e0e899" />|
-| [Null Bangalore × OWASP Bangalore](https://bsidesdelaware.com/) | 2025 |  Conference | <img width="225" height="224" alt="image" src="https://github.com/user-attachments/assets/e922c068-4e00-4a42-a871-cf720ba78aab" />|
+| [Bsides Delaware](https://bsidesdelaware.com/) | 2025 |  Conference | <img width="225" height="224" alt="image" src="https://github.com/user-attachments/assets/e922c068-4e00-4a42-a871-cf720ba78aab" />|
 | [Announcing Soon!](#) | 20XX | Announcing Soon! | <img width="225" height="224" alt="image" src="https://comb.io/p4hBRB.gif" />|
 
 
