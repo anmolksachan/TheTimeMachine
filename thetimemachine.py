@@ -1,6 +1,8 @@
 # thetimemachine.py
 import os
+import sys
 import argparse
+from urllib.parse import urlparse
 from core import (
     fetcher,
     jwtxposer,
@@ -12,11 +14,11 @@ from core import (
 )
 from core.ui import show_loader, print_banner
 from core.utils import load_extensions_from_file
-from core.menu import launch_interactive_menu
 from core.parameters import extract_parameters
-from core.subdomains import extract_subdomains_from_urls
 from core.lister import scan_for_listings
-from core.fetcher import console 
+from core.fetcher import console
+
+
 def main():
     parser = argparse.ArgumentParser(description='⏳ TheTimeMachine - Wayback Recon Suite')
     parser.add_argument("target", help="Target domain")
@@ -29,9 +31,17 @@ def main():
     parser.add_argument("--menu", action="store_true", help="Launch interactive menu")
     parser.add_argument("--parameters", action="store_true", help="Extract GET parameters from URLs")
 
+    # Show usage if no `--` options are provided
+    if not any(arg.startswith('--') for arg in sys.argv[1:]):
+        parser.print_usage()
+        return
 
     args = parser.parse_args()
-    target = args.target
+
+    # Extract target using urlparse
+    if "://" not in args.target:
+        args.target = "//" + args.target
+    target = urlparse(args.target).hostname.lower()
     content_dir = f"content/{target}"
     os.makedirs(content_dir, exist_ok=True)
 
@@ -42,7 +52,7 @@ def main():
         # Use a spinner for animation
         with console.status("[bold cyan]Contacting archive dimension...[/bold cyan]", spinner="dots"):
             urls, output_path = fetcher.fetch_wayback_urls(target)
-        
+
         if urls:
             console.print(f"[bold green]URLs successfully written to {output_path}[/bold green]")
     else:
@@ -69,10 +79,9 @@ def main():
         else:
             print(f"[+] Using extensions: {', '.join(backup_exts)}")
             backupfinder.fetch_backup_urls(target, backup_exts)
-    
+
     if args.listings:
         scan_for_listings(target, threads=10) # You can customize the thread count
-
 
     if args.attack:
         result = attackmode.pattern_match_mode(urls_file, args.attack, db_folder="db")
@@ -85,6 +94,7 @@ def main():
 
     if args.menu:
         menu.launch_interactive_menu(urls, target)
+
 
 if __name__ == "__main__":
     print_banner()
