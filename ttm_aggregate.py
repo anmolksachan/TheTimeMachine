@@ -1,12 +1,8 @@
-#!/usr/bin/env python3
+
 import sys
 import re
 from pathlib import Path
 from collections import defaultdict
-
-# =========================
-# CONFIG (REAL TTM FILES)
-# =========================
 
 CATEGORIES = {
     "fetch": ["_URLs.txt"],
@@ -26,16 +22,10 @@ CATEGORIES = {
 
 DOMAIN_RE = re.compile(r"^(?=.{1,253}$)(?!-)([a-z0-9-]{1,63}\.)+[a-z]{2,63}$")
 
-# =========================
-# HELPERS
-# =========================
 
 def is_under_apex(domain: str, apex: str) -> bool:
     return domain == apex or domain.endswith("." + apex)
 
-# =========================
-# MAIN
-# =========================
 
 def main():
     if len(sys.argv) != 2:
@@ -74,9 +64,6 @@ def main():
                         if line:
                             buckets[category].add(f"[{domain}] {line}")
 
-    # =========================
-    # WRITE OUTPUTS
-    # =========================
 
     for category, values in buckets.items():
         if not values:
@@ -93,3 +80,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
