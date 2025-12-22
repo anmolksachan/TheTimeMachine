@@ -1,12 +1,8 @@
-#!/usr/bin/env python3
 import subprocess
 import sys
 import re
 from pathlib import Path
 
-# =========================
-# EXACT TTM PIPELINE
-# =========================
 
 PIPELINE = [
     ["--fetch"],
@@ -26,9 +22,6 @@ PIPELINE = [
 
 DOMAIN_RE = re.compile(r"^(?=.{1,253}$)(?!-)([a-z0-9-]{1,63}\.)+[a-z]{2,63}$")
 
-# =========================
-# HELPERS
-# =========================
 
 def normalize(domain: str) -> str:
     domain = domain.strip().lower()
@@ -43,9 +36,6 @@ def load_subdomains(path: Path, apex: str):
             results.add(d)
     return sorted(results)
 
-# =========================
-# MAIN
-# =========================
 
 def main():
     if len(sys.argv) != 3:
@@ -78,7 +68,6 @@ def main():
             print("\n[CMD]", " ".join(cmd))
             print("-" * 60)
 
-            # 🔥 LIVE OUTPUT — NOTHING HIDDEN
             subprocess.run(
                 cmd,
                 cwd=base_dir
@@ -89,3 +78,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
