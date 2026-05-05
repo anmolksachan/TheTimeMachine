@@ -21,6 +21,7 @@ Whether you’re into bug bounty, red teaming, or just love good ol’ recon, th
 | [Bsides Delaware](https://bsidesdelaware.com/) | 2025 |  Conference | <img width="225" height="224" alt="image" src="https://github.com/user-attachments/assets/e922c068-4e00-4a42-a871-cf720ba78aab" />|
 | [BSides Agra](https://www.linkedin.com/posts/anmolksachan_bsides-bsides2025-bsidesagra-activity-7398014302693085184-_ioK?) | 2025 | Conference | <img width="225" height="224" alt="image" src="https://github.com/user-attachments/assets/c32c16a9-3294-4dbb-abb9-1ba1e4355116" /> |
 | [Wild West Hackin' Fest (Denver, Colorado)](https://wildwesthackinfest.com/) | 2026 | Conference | <img width="225" height="224" alt="image" src="https://github.com/user-attachments/assets/9cee6f18-20db-4aac-812e-40d09f132214" /> |
+| [BSides Budapest (Budapest, Hungary)](https://bsidesbud.com/%f0%9f%94%90-dive-into-bsidesbud2026s-line-up-and-talks/) | 2026 | Conference | <img width="225" height="224" alt="image" src="https://github.com/user-attachments/assets/68ffa85d-4145-4d9c-9f5e-ec3e33a6820c" /> |
 | [Announcing Soon!](#) | 20XX | Announcing Soon! | <img width="225" height="224" alt="image" src="https://comb.io/p4hBRB.gif" />|
 
 
