@@ -72,8 +72,6 @@ pip3 install -r requirements.txt
 python3 thetimemachine.py <target.com> [OPTIONS]
 ```
 
-**Note:** Don't use `http://` or `https://` in the domain — just pass `domain.com` or `sub.domain.com`.
-
 ---
 
 ## 📋 Options
