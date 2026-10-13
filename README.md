@@ -1,5 +1,3 @@
----
-
 # 🚀 TheTimeMachine v3.0 - Weaponizing Wayback for Recon, BugBounties, OSINT & More!
 
 ![image](https://github.com/user-attachments/assets/e99eb95e-f46e-4b97-8d2a-83bac89d0447)
