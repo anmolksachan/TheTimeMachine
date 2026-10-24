@@ -25,6 +25,10 @@ def retry_request(url, timeout=30, max_retries=MAX_RETRIES):
         try:
             response = requests.get(url, timeout=timeout)
             if response.status_code == 429:
+                retries += 1
+                if retries >= max_retries:
+                    console.print(f"[red]❌ Failed after {max_retries} retries: rate limit persisted[/red]")
+                    return None
                 console.print("[yellow]⚠️ Rate limit hit. Pausing for 5 minutes...[/yellow]")
                 time.sleep(RATE_LIMIT_PAUSE)
                 continue
